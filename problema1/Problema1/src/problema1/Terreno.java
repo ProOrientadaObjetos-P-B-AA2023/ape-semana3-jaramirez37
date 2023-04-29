@@ -71,7 +71,7 @@ public class Terreno {
                 + "\nValor del metro cuadrado del terreno: %.2f "
                 + "\nEl area del terreno: %.2f "
                 + "\nEl costo del terreno: %.2f ",
-                this.getAncho(), this.largo, 
+                this.getAncho(), this.getLargo(), 
                 this.getValorMetroCuadrado(), this.getArea(),
                 this.getCostoTerreno());
         return msj;
