@@ -13,7 +13,7 @@ public class DispositivoElectronico {
     private double ivaCostoInicial;
     private double costoFinal;
     private String direccionMac;
-    private String IMEI;
+    private String dicIMEI;
 
     public DispositivoElectronico() {
     }
@@ -23,13 +23,13 @@ public class DispositivoElectronico {
             double costoInicial,
             double ivaPorcentaje,
             String direccionMac,
-            String IMEI) {
+            String dicIMEI) {
         this.sistemaOperativo = sistemaOperativo;
         this.tamanoPantalla = tamanoPantalla;
         this.costoInicial = costoInicial;
         this.ivaPorcentaje = ivaPorcentaje;
         this.direccionMac = direccionMac;
-        this.IMEI = IMEI;
+        this.dicIMEI = dicIMEI;
     }
 
     public void setSistemaOperativo(String sistemaOperativo) {
@@ -60,8 +60,8 @@ public class DispositivoElectronico {
         this.direccionMac = direccionMac;
     }
 
-    public void setIMEI(String IMEI) {
-        this.IMEI = IMEI;
+    public void setDicIMEI(String dicIMEI) {
+        this.dicIMEI = dicIMEI;
     }
 
     public String getSistemaOperativo() {
@@ -92,8 +92,8 @@ public class DispositivoElectronico {
         return this.direccionMac;
     }
 
-    public String getIMEI() {
-        return this.IMEI;
+    public String getDicIMEI() {
+        return this.dicIMEI;
     }
 
     @Override
@@ -103,11 +103,11 @@ public class DispositivoElectronico {
                 + "\nSistema Operativo: %s"
                 + "\nTamano de la Pantalla: %.2f"
                 + "\nCosto Inical: %.2f"
-                + "\nIva Porcentaje: %2.f"
-                + "\nIva Costo Inical: %2.f"
-                + "\nCosto Final: %2.f"
+                + "\nIva Porcentaje: %.2f"
+                + "\nIva Costo Inical: %.2f"
+                + "\nCosto Final: %.2f"
                 + "\nDireccion MAC: %s"
-                + "\nIMEI: %S",
+                + "\nIMEI: %s",
                 this.getSistemaOperativo(),
                 this.getTamanoPantalla(),
                 this.getCostoInicial(),
@@ -115,7 +115,7 @@ public class DispositivoElectronico {
                 this.getIvaCostoInial(),
                 this.getCostoFinal(),
                 this.getDireccionesMac(),
-                this.getIMEI());
+                this.getDicIMEI());
         return msj;
     }
 }
